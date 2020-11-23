@@ -57,6 +57,11 @@ jobs:
           # ln -s /mnt/openwrt/staging_dir ./staging_dir
 
           df -h
+          
+      - name: hello world
+        run: |
+          git clone https://github.com/kenzok8/openwrt-packages.git openwrt-packages
+          git clone https://github.com/kenzok8/small.git small
 
       - name: Update feeds
         run: |
