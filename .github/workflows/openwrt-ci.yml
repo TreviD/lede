@@ -60,8 +60,8 @@ jobs:
           
       - name: hello world
         run: |
-          git clone https://github.com/kenzok8/openwrt-packages.git openwrt-packages
-          git clone https://github.com/kenzok8/small.git small
+          git clone https://github.com/kenzok8/openwrt-packages.git package/openwrt-packages
+          git clone https://github.com/kenzok8/small.git package/small
 
       - name: Update feeds
         run: |
